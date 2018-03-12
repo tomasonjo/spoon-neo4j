@@ -31,8 +31,7 @@ Or grab a concrete version, by clicking the Raw button on the tagged version of 
 
 [source,javascript]
 ----
-javascript:$.getScript('https://cdn.rawgit.com/jexp/spoon-neo4j/0.1/spoon.js');
-----
+javascript:var h=document.getElementsByTagName('html')[0];var s=document.createElement('script');s.setAttribute('src','https://code.jquery.com/jquery-3.3.1.min.js');h.appendChild(s);setTimeout(function() {var s=document.createElement('script');s.setAttribute('src','https://rawgit.com/jexp/spoon-neo4j/browser-3x/spoon.js');h.appendChild(s);},1000);
 ////
 
 .Example query for datatable and chart
